@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pw-container {
+    --max-width: 780px;
+    --padding: 1.5rem;
+
+    width: min(var(--maxreportItem-width), 100% - (var(--padding) * 2));
+    max-width: min(var(--max-width), 100% - (var(--padding) * 2));
+    margin-inline: auto;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #FFFFFF 0%, #47A909 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-gradient {
+    background: linear-gradient(90deg, #FFFFFF 0%, #47A909 100%);
+}
+
+
+.button {
+    @apply bg-green hover:bg-green/80 w-full inline-flex text-center justify-center rounded-2xl font-bold text-base leading-snug;
+}
